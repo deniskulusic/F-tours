@@ -547,6 +547,7 @@ z-index: 2;
     
 }
 .individualno{
+    padding-top: 240px;
     .big{
         grid-column: span 7;
         font-family: 'Lora';
@@ -903,7 +904,7 @@ opacity: 0.8;
     text-align: start;
   }
     .slider-dark{
-        padding-top: 180px;
+      
         h2{
             grid-column: span 12;
         }
@@ -918,7 +919,7 @@ opacity: 0.8;
         }
     }
     .individualno{
-        
+        padding-top: 180px;
         .big{
             margin-bottom: 0;
                 grid-column: span 12;
@@ -1030,6 +1031,9 @@ opacity: 0.8;
         .arrow-slider{
             margin-top: 16px;
         }
+    }
+    .individualno{
+        padding-top: 104px;
     }
     .individualno-img{
         grid-column: span 12;
@@ -1210,6 +1214,9 @@ opacity: 0.8;
     .circle{
         left:0px;
         top:0px;
+    }
+    .individualno{
+        padding-top: 80px;
     }
     .individualno-text{
         height: fit-content;

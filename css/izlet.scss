@@ -153,6 +153,7 @@ text-transform: uppercase;
         overflow-y: auto;
         overflow-x: hidden;
         perspective: 1px;
+        scroll-behavior: smooth;
     }
     .imgnaslov{
         z-index: -2;

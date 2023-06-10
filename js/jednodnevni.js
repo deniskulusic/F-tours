@@ -54,17 +54,20 @@ for(i=0;i<lngbutton.length;i++){
 }
 const ButtonLoadMore=document.querySelector(".button-div button");
 const LoadMoreContent=document.querySelector(".load-more-content");
-
+const wrap=document.querySelector(".wrapper");
+const paralax=document.getElementById("naslov");
+var ButtonCound=1;
 
       ButtonLoadMore.addEventListener('click',function(){
         LoadMoreContent.classList.toggle("load-more-content-active");
-        console.log(ButtonLoadMore)
+        if(ButtonCound%2==0){
+          wrap.scrollTo(0,wrap.offsetHeight)
+        }
+        ButtonCound++;
     });
 
 
-const wrap=document.querySelector(".wrapper");
 
-const paralax=document.getElementById("naslov");
 
 function scroll() {
   if(wrap.scrollTop>wrap.clientHeight){

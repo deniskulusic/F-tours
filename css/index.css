@@ -496,6 +496,9 @@
   text-decoration-thickness: 3px;
 }
 
+.individualno {
+  padding-top: 240px;
+}
 .individualno .big {
   grid-column: span 7;
   font-family: "Lora";
@@ -849,9 +852,6 @@ label {
     grid-column: span 12;
     text-align: start;
   }
-  .slider-dark {
-    padding-top: 180px;
-  }
   .slider-dark h2 {
     grid-column: span 12;
   }
@@ -861,6 +861,9 @@ label {
   }
   .slider-dark .signature {
     margin-top: -230px;
+  }
+  .individualno {
+    padding-top: 180px;
   }
   .individualno .big {
     margin-bottom: 0;
@@ -964,6 +967,9 @@ label {
   }
   .slider-dark .arrow-slider {
     margin-top: 16px;
+  }
+  .individualno {
+    padding-top: 104px;
   }
   .individualno-img {
     grid-column: span 12;
@@ -1125,6 +1131,9 @@ label {
   .circle {
     left: 0px;
     top: 0px;
+  }
+  .individualno {
+    padding-top: 80px;
   }
   .individualno-text {
     height: -moz-fit-content;
