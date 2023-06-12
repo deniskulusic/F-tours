@@ -1,5 +1,10 @@
 * {
   scroll-behavior: smooth;
+  box-sizing: inherit !important;
+}
+
+nav {
+  background-color: white !important;
 }
 
 .previous {
@@ -89,6 +94,7 @@ input, select {
   padding: 0;
   border: 0;
   padding: 16px;
+  box-sizing: border-box !important;
 }
 
 .arrow {
@@ -292,11 +298,16 @@ option:disabled {
   color: #626262;
 }
 
-.buttons {
+.upit-button-close {
+  box-sizing: border-box !important;
+}
+
+.buttonsNP {
   grid-column: span 12;
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
+  box-sizing: border-box !important;
 }
 
 .checkbox {
@@ -390,17 +401,20 @@ input[type=checkbox] {
   input, select {
     width: 100%;
   }
-  .buttons {
+  .tab-background {
+    padding: 24px;
+  }
+  .buttonsNP {
     flex-direction: column;
     row-gap: 16px;
   }
-  .buttons button {
-    width: 240px;
+  .buttonsNP button {
+    width: 100%;
   }
-  .buttons button:nth-child(1) {
+  .buttonsNP button:nth-child(1) {
     order: 2;
   }
-  .buttons button:nth-child(2) {
+  .buttonsNP button:nth-child(2) {
     order: 1;
   }
 }/*# sourceMappingURL=form.css.map */

@@ -3,6 +3,10 @@ $MiddleGrey:#626262;
 $Orange:#FC6536;
 *{
   scroll-behavior: smooth;
+  box-sizing: inherit !important;
+}
+nav{
+  background-color: white !important;
 }
 .previous{
   color:$DarkBlue;
@@ -83,6 +87,7 @@ input[type="radio"] {
     padding: 0;
     border: 0;
     padding: 16px;
+    box-sizing: border-box !important;
   }
   
   .arrow{
@@ -254,12 +259,15 @@ select{
   option:disabled{
     color:#626262
   }
-
-.buttons{
+.upit-button-close{
+  box-sizing: border-box !important;
+}
+.buttonsNP{
     grid-column: span 12;
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
+    box-sizing: border-box !important;
 }
 
 .checkbox {
@@ -348,12 +356,15 @@ h6{
 input , select{
   width: 100%;
 }
-.buttons{
+.tab-background{
+  padding: 24px;
+}
+.buttonsNP{
   
   flex-direction: column;
   row-gap: 16px;
   button{
-    width: 240px;
+    width: 100%;
   }
   button:nth-child(1){
     order:2;
