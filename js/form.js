@@ -32,7 +32,7 @@ function nextPrev(n) {
   if (n == 1 && !validateForm()) return false;
   window.scrollTo(0, 0);
   // if you have reached the end of the form... :
-  if (currentTab >= x.length-1) {
+  if (currentTab >= x.length-1 && n==1) {
     //...the form gets submitted:
     x[2].style.display = "grid";
     x[3].style.display = "grid";
@@ -194,7 +194,7 @@ var x = document.getElementsByClassName("tab");
   z.addEventListener('click',function(){
     zx.classList.remove("invalid");
   });
-  var yx=x[2].querySelectorAll('input[name="fav_language"]');
+  var yx=x[2].querySelectorAll('input[name="spol"]');
    var xy=x[2].querySelectorAll(".big label");
       for(var j=0;j<yx.length;j++){
         yx[j].addEventListener('click',function(){
@@ -228,6 +228,22 @@ var x = document.getElementsByClassName("tab");
       zq[1].addEventListener('click',function(){
         zw[1].classList.remove("invalid");
       });
+      var link = document.getElementById('checklink'); 
+      var linkCount=0;
+      link.addEventListener('click',function(){
+        if(linkCount%2==0) 
+        {link.href = 'https://destinationsftours-my.sharepoint.com/:b:/g/personal/marko_f-tours_hr/Ef5kKJ9k9dxPq6s_tQhyAP0B0HNNE9zvTKGWX4zbm5ybvg?e=ToaHIL';
+        link.target='_blank';
+        linkCount++;
+      }
+        else
+        {
+          link.target='';
+          link.href = '#';
+        linkCount++;
+      } 
+      });
+      
      
 
 

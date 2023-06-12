@@ -58,7 +58,7 @@ input[type=radio] {
   padding: 0;
   font: inherit;
   color: currentColor;
-  width: 22px;
+  width: 22px !important;
   height: 22px;
   border: 1px solid #626262;
   border-radius: 50%;
@@ -122,7 +122,7 @@ select::-ms-expand {
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid, select.invalid {
-  background-color: #ffdddd;
+  background-color: #ffdddd !important;
 }
 
 div.invalid {
@@ -138,6 +138,28 @@ div.invalid {
 .tab h6 {
   grid-column: span 12;
   margin-bottom: 8px;
+}
+
+.tab-background {
+  background-color: #F8F8F8;
+  padding: 48px;
+  grid-column: span 12;
+  padding-top: 32px;
+  border-radius: 16px;
+}
+.tab-background h6 {
+  margin-top: 16px;
+}
+.tab-background input, .tab-background select {
+  background-color: white;
+  width: 100%;
+}
+.tab-background .active-option {
+  background-color: white !important;
+}
+
+.tab-background2 {
+  margin-top: 48px;
 }
 
 p {
@@ -292,10 +314,6 @@ input[type=checkbox] {
   padding: 0;
 }
 
-.a {
-  margin-top: 32px;
-}
-
 .blue {
   font-family: "Manrope";
   margin-top: 0;
@@ -371,5 +389,18 @@ input[type=checkbox] {
   }
   input, select {
     width: 100%;
+  }
+  .buttons {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .buttons button {
+    width: 240px;
+  }
+  .buttons button:nth-child(1) {
+    order: 2;
+  }
+  .buttons button:nth-child(2) {
+    order: 1;
   }
 }/*# sourceMappingURL=form.css.map */
