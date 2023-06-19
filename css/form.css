@@ -207,7 +207,62 @@ h2 {
   padding: 8px;
 }
 
+.pdf-pop {
+  grid-column: span 12;
+  display: none;
+  cursor: pointer;
+}
+
+.pdf-active {
+  display: flex;
+}
+
+.pdf-pop-inner {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  background-color: #bbbbbb;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pdf-pop-inner img {
+  height: 24px;
+  width: 24px;
+  margin-right: 16px;
+}
+.pdf-pop-inner div {
+  text-decoration: none;
+}
+
+.pdf-pop-inner:hover {
+  background-color: #c9c9c9;
+}
+
 /* Mark the active step: */
+#show-more {
+  cursor: pointer;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FC6536;
+  text-decoration-line: underline;
+  margin-top: 16px;
+}
+
+.show-more-text {
+  display: none;
+}
+
+.show-more-active {
+  display: flex;
+}
+
 .step:nth-child(1).active-u, .step:nth-child(1).finish {
   opacity: 1;
   background-color: #b11f23;
@@ -306,7 +361,7 @@ option:disabled {
   grid-column: span 12;
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 48px;
   box-sizing: border-box !important;
 }
 

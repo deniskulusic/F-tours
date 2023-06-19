@@ -117,7 +117,7 @@
             <span class="arrow"></span>
         </p>
         <p><label for="odrediste">Aranžman / odredište</label>
-            <select name="odrediste" >
+            <select name="odrediste" class="pdf-choose">
                 <option value="" selected="selected" disabled="disabled">Odaberite Aranžman / odredište</option>
                 <option value="Odredište 1">Odredište 1</option>
                 <option value="Odredište 2">Odredište 2</option>
@@ -126,7 +126,7 @@
         </p>
         <p><label for="razred">Razred <u>*</u></label>
             <select name="razred">
-                <option value="" selected="selected" disabled="disabled">Odaberite Razred</option>
+                <option value="" selected="selected" disabled="disabled" >Odaberite Razred</option>
                 <option value="Razred 1">Razred 1</option>
                 <option value="Razred 2">Razred 2</option>
             </select>
@@ -140,11 +140,19 @@
             </select>
             <span class="arrow"></span>
         </p>
+        
+            <div class="pdf-pop">
+                <a class="pdf-pop-inner" target="_blank">
+                    <img src="assets/image/80942.png" alt="">
+                    <div class="pmedium" id="pdftext">YO</div>
+                </a>
+                
+            </div>
+        
         <div class="checkbox">
-            <a target="_blank" id="checklink"  href="https://destinationsftours-my.sharepoint.com/:b:/g/personal/marko_f-tours_hr/Ef5kKJ9k9dxPq6s_tQhyAP0B0HNNE9zvTKGWX4zbm5ybvg?e=ToaHIL">
             <input type="checkbox" >
-        </a>
-            <div class="psmall">Označite polje i pročitajte/preuzmite program putovanja</div>
+        
+            <div class="psmall" >Označite polje i pročitajte/preuzmite program putovanja</div>
         </div>
       </div>
       <div class="tab grid">
@@ -219,18 +227,20 @@
             </p>
             <div class="opis form-check-none"> 
                 <h6>RODITELJSKA PRIVOLA ZA UPRAVLJANJE OSOBNIM PODACIMA</h6>
-                Ja, kao nositelj roditeljske skrbi maloljetnika suglasan sam da Agencija obrađuje osobne podatke putnika (ime i prezime, datum rođenja, broj putnog dokumenta) mog djeteta u slučaju kada je to neophodno za realizaciju usluge smještaja, prijevoza, osiguranja i ulaznica za posjete muzejima, te da se osobni podaci: ime, prezime i datum rođenja mogu proslijediti društvima navedenim u paket aranžmanu. Osobni podaci će se koristiti samo u prethodno navedene svrhe i čuvat će se sukladno zakonskim i regulatornim propisima Opće uredbe o zaštiti osobnih podataka (GDPR 2016/679), odnosno u trajanju od 5 godina od završetka usluge, osim ako dulji vremenski period čuvanja osobnih podataka nije određen važećim nacionalnim ili europskim propisima. <br>
 <b> Izjavljujem da privolu dajem dobrovoljno, da mi je detaljno pojašnjena namjera korištenja osobnih podataka djeteta u svrhe iz ove privole kao i moje pravo da se predmetnoj obradi usprotivim te da ova privola predstavlja izričitu privolu sukladno važećim zakonskim propisima koji uređuju zaštitu osobnih podataka te da je uporaba osobnih podataka djeteta dozvoljena na opisani način i u zadanom opsegu. </b>
-            </div>
+         <div class="show-more-text">                Ja, kao nositelj roditeljske skrbi maloljetnika suglasan sam da Agencija obrađuje osobne podatke putnika (ime i prezime, datum rođenja, broj putnog dokumenta) mog djeteta u slučaju kada je to neophodno za realizaciju usluge smještaja, prijevoza, osiguranja i ulaznica za posjete muzejima, te da se osobni podaci: ime, prezime i datum rođenja mogu proslijediti društvima navedenim u paket aranžmanu. Osobni podaci će se koristiti samo u prethodno navedene svrhe i čuvat će se sukladno zakonskim i regulatornim propisima Opće uredbe o zaštiti osobnih podataka (GDPR 2016/679), odnosno u trajanju od 5 godina od završetka usluge, osim ako dulji vremenski period čuvanja osobnih podataka nije određen važećim nacionalnim ili europskim propisima. <br>
+       
+        Opoziv suglasnosti je moguće ostvariti na način da se pošalje obavijest o opozivu na e-mail adresu desk@f-tours.hr ili na adresu Destinations F-tours d.o.o., Trg Hrvatske bratske zajednice 2, 21000 Split.  
+        </div> 
+        <div id="show-more">Prikaži više</div>
+</div>
             <div class="checkbox checkbox3 form-check-none">
                 
                 <input type="checkbox">
            
                 <div class="psmall">Slažem se s privolom za upravljanje osobnim podatcima</div>
             </div>
-            <div class="opis form-check-none"> 
-                Opoziv suglasnosti je moguće ostvariti na način da se pošalje obavijest o opozivu na e-mail adresu desk@f-tours.hr ili na adresu Destinations F-tours d.o.o., Trg Hrvatske bratske zajednice 2, 21000 Split.  
-            </div>
+            
             <div class="radio full form-check-none">
              <b>   Suglasan sam da se fotografije/video snimke/audio snimke mog djeteta sa putovanja objave na društvenim mrežama Agencije</b>
                 <div class="big">

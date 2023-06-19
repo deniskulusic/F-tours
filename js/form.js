@@ -228,24 +228,35 @@ var x = document.getElementsByClassName("tab");
       zq[1].addEventListener('click',function(){
         zw[1].classList.remove("invalid");
       });
-      var link = document.getElementById('checklink'); 
-      var linkCount=0;
-      link.addEventListener('click',function(){
-        if(linkCount%2==0) 
-        {link.href = 'https://destinationsftours-my.sharepoint.com/:b:/g/personal/marko_f-tours_hr/Ef5kKJ9k9dxPq6s_tQhyAP0B0HNNE9zvTKGWX4zbm5ybvg?e=ToaHIL';
-        link.target='_blank';
-        linkCount++;
-      }
-        else
-        {
-          link.target='';
-          link.href = '#';
-        linkCount++;
-      } 
-      });
       
-     
-
+      var PdfDiv=document.querySelector(".pdf-choose");
+      var PdfPoP=document.querySelector(".pdf-pop");
+      document.querySelector(".pdf-pop");
+     var PdfText=document.getElementById("pdftext");
+     if(PdfDiv.value!=""){
+      PdfPoP.classList.add("pdf-active");
+      PdfText.innerHTML = PdfDiv.value;
+     }
+    PdfDiv.addEventListener('input',function(){
+      PdfPoP.classList.add("pdf-active");
+      PdfText.innerHTML = PdfDiv.value;
+    });
+    PdfPoP.addEventListener('click',function(){
+      document.querySelector(".pdf-pop-inner").href="https://destinationsftours-my.sharepoint.com/personal/marko_f-tours_hr/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmarko%5Ff%2Dtours%5Fhr%2FDocuments%2FWEB%2F2023%2FS%C5%A0%2FZADAR%2F%C5%A0PUD%2F%C5%A0PUD%20ZD%20%2D%20TOSKANA%2Epdf&parent=%2Fpersonal%2Fmarko%5Ff%2Dtours%5Fhr%2FDocuments%2FWEB%2F2023%2FS%C5%A0%2FZADAR%2F%C5%A0PUD&ga=1";
+    });
+    var ShowMore=document.getElementById("show-more");
+      var ShowMoreText=document.querySelector(".show-more-text");
+      var ShowMoreCount=0;
+      ShowMore.addEventListener('click',function(){
+        ShowMoreText.classList.toggle("show-more-active");
+        if(ShowMoreCount%2==0){
+          ShowMore.innerHTML="Prikaži više";
+        }
+        else{
+          ShowMore.innerHTML="Prikaži manje";
+        }
+        ShowMoreCount++;
+      });
 
       const button = document.querySelector(".menu");
       const navbar=document.querySelector("nav");
